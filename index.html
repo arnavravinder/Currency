@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="container" data-tilt data-aos="fade-up">
+        <div class="converter">
+            <h1>Currency Converter</h1>
+            <div class="input-group" data-aos="fade-right">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <select id="fromCurrency"></select>
+            </div>
+            <div class="input-group" data-aos="fade-left">
+                <select id="toCurrency"></select>
+            </div>
+            <button onclick="convert()" data-aos="fade-up">Convert</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
